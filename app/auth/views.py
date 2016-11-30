@@ -4,6 +4,7 @@ from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, current_user
 
 from . import auth
+from .. import login_manager
 from ..email import send_email
 from ..models import User, db
 from .forms import LoginForm, RegistrationForm
@@ -80,3 +81,9 @@ def resend_confirmation():
                'auth/email/confirm', user=current_user, token=token)
     flash('An confirmation email has been sent to you by email.')
     return redirect(url_for('main.index'))
+
+
+@login_manager.unauthorized_handler
+def unauthorized():
+    return redirect(url_for('auth.login', next='/admin'))
+

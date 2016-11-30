@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #fff;
+  height: 100%;
+  color: #3a3a3a;
+}
+
+h5::before {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+h5 {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 0.5ex;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.journal-row {
+
+}
+
+.abstract-text {
+  color: #606060;
+}

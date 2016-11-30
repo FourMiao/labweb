@@ -5,7 +5,7 @@ from flask import render_template, session, redirect, url_for
 
 from . import main
 from .forms import NameForm
-
+from .. import db
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
@@ -29,7 +29,9 @@ def events():
 
 
 @main.route('/publications', methods=['GET'])
+@main.route('/publications.html', methods=['GET'])
 def publications():
+
     return render_template('publications.html')
 
 

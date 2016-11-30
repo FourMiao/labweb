@@ -1,10 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block custom_css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='content/css/default.css') }}">
+{% endblock %}
+
+{% block page_content %}
+  <div>
+<!--    {% if journals %}
+      {% for journal in journals %}
+        <div class="row journal-row">
+          
+        </div>
+      {% endfor %}
+    {% endif %}
+-->
+
+    <header class="clearfix">
+      <h5 class="pull-left" >JOURNAL PUBLICATIONS</h5>
+    </header>  
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <header class="clearfix">
+      <h5 class="pull-left" >CONFERENCE PUBLICATIONS</h5>
+    </header>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+    <div class="media">
+
+      <a href="#" class="pull-left">
+        <img src="{{ url_for('static', filename='imgs/1.jpg') }}" class="media-object", width="96px" height="96px"/>
+      </a>
+
+      <div class="media-body">
+        <p class="media-heading">
+          <strong>An information-theoretic model for link prediction in complex networks.</strong> <br />
+          B Zhu, Y Xia. <i>Scientific Reports</i>, (2016) 5: 13707.
+          <a href="http://www.nature.com/articles/srep13707">[PDF]</a>
+        </p>
+        <p class="abstract-text">
+          An information-theoretic model
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -12,10 +12,11 @@
     <title>{% block title %}{% endblock %}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="static/hero/css/heroic-features.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='hero/css/heroic-features.css') }}" rel="stylesheet">
+    {% block custom_css %}{% endblock %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,17 +43,29 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="http://placehold.it/150x30&text=Logo" alt="">
+                    <a class="navbar-brand" href="{{ url_for('main.index') }}">XIA LAB</a>
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="{{ url_for('main.index') }}">Home</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Staff</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.publications') }}">Publications</a>
+                    </li>
+                    <li>
+                        <a href="#">Course</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -68,10 +81,10 @@
     {% block content %}
     <div class="container">
         {% block page_content %}{% endblock %}
-        <footer>
+        <footer class="clearfix">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; XIA LAB 2016</p>
+                    <p>Copyright &copy; XIA LAB 2016. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
@@ -79,10 +92,10 @@
     {% endblock %}
 
     <!-- jQuery -->
-    <script src="static/jquery/jquery.js"></script>
+    <script src="{{ url_for('static', filename='jquery/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
 {% endblock %}
 </body>
 </html>

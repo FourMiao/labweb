@@ -5,17 +5,28 @@
  */
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .hero-spacer {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .hero-feature {
     margin-bottom: 30px;
 }
 
-footer {
-    margin: 50px 0;
+.container {
+  position: relative;
+  max-width: 600pt;
+  height: 100%;
 }
+
+
+footer {
+  position: relative;
+  bottom: 0px;
+  font-size: 12px;
+  color: #676a6c;
+  text-align: center;
+}   
